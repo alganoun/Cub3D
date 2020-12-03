@@ -6,7 +6,7 @@
 /*   By: user42 <user42@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/21 23:05:52 by allanganoun       #+#    #+#             */
-/*   Updated: 2020/11/26 01:09:33 by user42           ###   ########lyon.fr   */
+/*   Updated: 2020/12/03 11:47:18 by user42           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,12 @@ int		ft_atoi_col(char *str)
 		i++;
 	while (str[i] >= 48 && str[i] <= 57)
 	{
-		if (nb >= 2147483647)
-			return (2147483647);
+		if (nb > 255)
+		{
+			write(1, "/!\\ Some RGB values are too high\n", 33);
+			write(1, "Those values have been set to 255\n\n", 35);
+			return (255);
+		}
 		nb = nb * 10 + str[i] - 48;
 		i++;
 	}
@@ -47,6 +51,13 @@ int		ft_atoi_width(char *str)
 		nb = nb * 10 + str[i] - 48;
 		i++;
 	}
+	if (nb <= 9)
+	{
+		nb = 10;
+		write(1, "/!\\ Horizontal resolution set to 10 to avoid crash\n", 50);
+	}
+	if (nb == 3000000000)
+		return (300000000);
 	return (nb);
 }
 
@@ -65,6 +76,11 @@ int		ft_atoi_height(char *str)
 			return (2147483647);
 		nb = nb * 10 + str[i] - 48;
 		i++;
+	}
+	if (nb <= 9)
+	{
+		nb = 10;
+		write(1, "/!\\ Vertical resolution set to 10 to avoid crash\n", 48);
 	}
 	return (nb);
 }

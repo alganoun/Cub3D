@@ -6,7 +6,7 @@
 /*   By: user42 <user42@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/24 18:33:51 by allanganoun       #+#    #+#             */
-/*   Updated: 2020/11/26 00:52:29 by user42           ###   ########lyon.fr   */
+/*   Updated: 2020/12/01 16:26:44 by user42           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int		map_builder2(t_map **map_s, int line_nb)
 		if (!((*map_s)->map[i] =
 			(char *)ft_calloc(ft_strlen_nl(&(*map_s)->premap[j]) + 1, 1)))
 			return (-1);
-		while ((*map_s)->premap[j] != '\n')
+		while ((*map_s)->premap[j] && (*map_s)->premap[j] != '\n')
 			(*map_s)->map[i][k++] = (*map_s)->premap[j++];
 		(*map_s)->map[i][k] = '\0';
 		k = 0;

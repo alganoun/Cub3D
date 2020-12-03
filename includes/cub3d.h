@@ -6,7 +6,7 @@
 /*   By: user42 <user42@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 20:36:56 by allanganoun       #+#    #+#             */
-/*   Updated: 2020/11/25 22:10:45 by user42           ###   ########lyon.fr   */
+/*   Updated: 2020/12/01 10:24:38 by user42           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <fcntl.h>
 # include <unistd.h>
-# include <stdio.h>
 # include <math.h>
 # include <mlx.h>
 # include <sys/stat.h>

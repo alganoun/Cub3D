@@ -6,7 +6,7 @@
 /*   By: user42 <user42@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/07 18:49:29 by allanganoun       #+#    #+#             */
-/*   Updated: 2020/11/26 00:35:46 by user42           ###   ########lyon.fr   */
+/*   Updated: 2020/12/01 09:09:06 by user42           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,22 +77,22 @@ int		map_checker(t_all **all)
 	i = 1;
 	if (check_first_last((*all)->map_s->map[0]) == -1)
 		return (-1);
-	while ((*all)->map_s->map[i + 1] != NULL)
+	while ((*all)->map_s->map[i] != NULL)
 	{
 		if (checkline((*all)->map_s->map[i]) == -1)
 			return (-1);
-		if (check_front_walls((*all)->map_s->map[i],
-			(*all)->map_s->map[i + 1]) == -1)
+		if (check_front_walls((*all)->map_s->map[i - 1],
+			(*all)->map_s->map[i]) == -1)
 			return (-1);
-		if (check_back_walls((*all)->map_s->map[i],
-			(*all)->map_s->map[i + 1]) == -1)
+		if (check_back_walls((*all)->map_s->map[i - 1],
+			(*all)->map_s->map[i]) == -1)
 			return (-1);
-		if (check_holes((*all)->map_s->map[i],
-			(*all)->map_s->map[i + 1]) == -1)
+		if (check_holes((*all)->map_s->map[i - 1],
+			(*all)->map_s->map[i]) == -1)
 			return (-1);
 		i++;
 	}
-	if (check_first_last((*all)->map_s->map[i]) == -1)
+	if (check_first_last((*all)->map_s->map[i - 1]) == -1)
 		return (-1);
 	return (0);
 }
