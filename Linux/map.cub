@@ -1,0 +1,19 @@
+
+R	3000000000 300
+NO	./textures/bluestone.xpm
+SO	./textures/colorstone.xpm
+WE	./textures/greystone.xpm
+EA	./textures/redbrick.xpm
+S	./textures/barrel.xpm
+
+F 117, 142, 79
+C 135 ,    245 , 251
+
+ 1111111111
+1000000001
+ 11100010011
+1000001	10001
+100N00010011
+100000100201
+ 102000100001
+  1111111111
