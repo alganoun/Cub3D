@@ -6,7 +6,7 @@
 /*   By: allanganoun <allanganoun@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/03 19:14:33 by allanganoun       #+#    #+#             */
-/*   Updated: 2021/05/10 13:23:00 by allanganoun      ###   ########.fr       */
+/*   Updated: 2021/05/10 17:00:03 by allanganoun      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void	game_on_screen(t_game *game)
 {
 	mlx_hook(game->window->win_ptr, 2, 1L << 0, key_pressed, game);
 	mlx_hook(game->window->win_ptr, 3, 1L << 1, key_released, game);
-	mlx_hook(game->window->win_ptr, 33, 1L << 17, close_window, game);
+	mlx_hook(game->window->win_ptr, 17, 1L << 17, close_window, game);
 	mlx_loop_hook(game->window->mlx_ptr, raycasting_loop, &game);
 	mlx_loop(game->window->mlx_ptr);
 }
