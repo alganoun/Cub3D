@@ -10,6 +10,8 @@ Coding it was about learning the raycasting technique and I made it during my fo
 
 ### Instructions
 
+* Use ``make`` command to compile the program
+* Use ``./Cub3D map.cub`` command to launch the program
 * WASD to move, Left/Right directional keys to rotate camera
 * ESC to quit
 * Textures or colors for each sides (North, South, West, East) and colors on Sky/Floor
@@ -23,6 +25,8 @@ Coder ce programme avait pour but d'apprendre le principe du Raycasting, ce qui 
 
 ### Instructions
 
+* Utiliser la commande ``make`` pour compiler le programme
+* Utiliser la commande ``./Cub3D map.cub`` pour lancer le programme
 * WASD pour se déplacer, touches directionnelles Droite/Gauche pour orienter la caméra
 * ESC pour quitter le progamme
 * Textures sur les murs (Nord Sud, Ouerst, Est) ainsi que couleurs sur le Plafond/Sol
