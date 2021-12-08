@@ -1,5 +1,7 @@
+_Translations available_
+<kbd>[<img title="Française" alt="Française" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/fr.svg" width="22">](README_translation/README.md)</kbd>
+#
 # Cub3D
-
 <img align="center" src="macOS/screenshot.bmp" alt="Screenshot of the game" />
 
 ``Cub3D`` is program made using raycasting in C.
