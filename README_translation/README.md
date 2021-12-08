@@ -1,11 +1,11 @@
 
 # Cub3D
-### _Read the subject [here](../subjects/en.subject.pdf)_
-<img align="center" src="../macOS/screenshot.bmp" alt="Screenshot of the game" />
 
+<img align="center" src="../macOS/screenshot.bmp" alt="Screenshot of the game" />
 ``Cub3D`` est un programme qui utilise le Raycasting
 Coder ce programme avait pour but d'apprendre le principe du Raycasting, ce qui a été fait durant ma formation à l'école 42.
 
+#### _Lisez le sujet [ici](../subjects/fr.subject.pdf)_
 
 ### Instructions
 

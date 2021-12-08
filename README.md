@@ -3,13 +3,13 @@
 #
 
 # Cub3D
-### _Read the subject [here](subjects/en.subject.pdf)_
 
 <img align="center" src="macOS/screenshot.bmp" alt="Screenshot of the game" />
 
 ``Cub3D`` is program made using raycasting in C.
 Coding it was about learning the raycasting technique and I made it during my formation in 42 School.
 
+### _Read the subject [here](subjects/en.subject.pdf)_
 
 ### Instructions
 
