@@ -1,4 +1,4 @@
-_Translations available_
+##### _Translations available_
 <kbd>[<img title="Française" alt="Française" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/fr.svg" width="22">](README_translation/README.md)</kbd>
 #
 # Cub3D
