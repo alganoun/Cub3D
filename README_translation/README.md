@@ -1,7 +1,7 @@
 
 # Cub3D
 
-<img align="center" src="macOS/screenshot.bmp" alt="Screenshot of the game" />
+<img align="center" src="../macOS/screenshot.bmp" alt="Screenshot of the game" />
 
 ``Cub3D`` est un programme qui utilise le Raycasting
 Coder ce programme avait pour but d'apprendre le principe du Raycasting, ce qui a été fait durant ma formation à l'école 42.
